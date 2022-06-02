@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--==================== FAVICON ====================-->
+        <link rel="icon" href="img/fav.png" type="image/x-icon">
+
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
@@ -12,6 +15,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/hometitle.css">
 
         <title>Naveen Dilsara |Full Stack Developer </title>
     </head>
@@ -106,7 +110,24 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Naveen</h1>
+                            <h1 class="home__title">
+                                <div id="container">
+                                    <span id="text1"></span>
+                                    <span id="text2"></span>
+                                </div>
+                                <svg id="filters">
+                                    <defs>
+                                        <filter id="threshold">
+                                            <feColorMatrix in="SourceGraphic"
+                                            type="matrix"
+                                            values="1 0 0 0 0
+									            0 1 0 0 0
+									            0 0 1 0 0
+								            	0 0 0 255 -140" />
+		                                </filter>
+	                                </defs>
+                                </svg>
+                            </h1>
                             <h3 class="home__subtitle"> Full Stack Developer & <br> Graphic Designer</h3>
                             <p class="home__description">Creative & Experience Web developer and Graphic Designer.</p>
                             <a href="#contact" class="button button--flex">
@@ -700,5 +721,6 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="js/main.js"></script>
+        <script src="js/hometitle.js"></script>
     </body>
 </html>

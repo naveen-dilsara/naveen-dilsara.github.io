@@ -9,15 +9,15 @@ const elts = {
 
 // The strings to morph between. You can change these to anything you want!
 const texts = [
-	"Hi!!",
+	"Hi !",
 	"I'm",
 	"Naveen",
 	"Dilsara",
 ];
 
 // Controls the speed of morphing.
-const morphTime = 1;
-const cooldownTime = 0.25;
+const morphTime = 1.5;
+const cooldownTime = .25;
 
 let textIndex = texts.length - 1;
 let time = new Date();

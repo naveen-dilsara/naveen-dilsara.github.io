@@ -2147,6 +2147,7 @@ canvas {
 .st-testimonial.st-style1 .st-testimonial-designation {
   line-height: 1.3em;
 }
+.st-testimonial.st-style1 .st-testimonial-text p #more {display: none;}
 
 /*--------------------------------------------------------------
 17. Blog
